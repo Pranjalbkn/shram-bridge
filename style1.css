@@ -1,0 +1,96 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+.text
+{
+    margin:50px auto;
+    text-align:center;
+}
+.air-btn-box
+{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.box1, .box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(23, 2, 51, 0.432);
+    padding: 20px;
+    width: 300px; 
+    min-height: 200px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.box1:hover,.box2:hover
+{
+    transform: scale(1.05);
+}
+.iconbutton
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+   
+}
+.icon img
+{
+    width:50px;
+    height:50px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #113f81;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button button:hover
+{
+    background-color: rgb(78, 71, 71);
+}
+.login p
+{
+    margin-top:20px;
+   text-align:center;
+}
+
+@media (max-width: 768px) {
+    .box1, .box2 {
+        width: 100%; 
+    }
+
+    .air-btn-box {
+        gap: 10px; 
+    }
+
+    .container {
+        margin-top: 15px;
+    }
+}

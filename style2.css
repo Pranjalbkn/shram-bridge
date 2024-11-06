@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: white; 
+    padding: 20px;
+}
+
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+nav .logo {
+    width: 150px; 
+    height: auto;
+}
+
+.loginform {
+    width: 100%;
+    max-width: 500px; 
+    background-color: white; 
+    color: black;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.048);
+    padding: 40px 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.loginform h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.input-element {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.input-element input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: black;
+}
+
+.input-element input::placeholder {
+    color: grey;
+}
+
+.input-element i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.remember-forgot label input {
+    accent-color: black;
+    margin-right: 5px;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 50px; /* Increased button height */
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+.signup {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup p a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup p a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .loginform {
+        padding: 30px 40px;
+    }
+
+    .loginform h1 {
+        font-size: 28px;
+    }
+
+    .input-element input {
+        height: 45px;
+        padding: 0 15px;
+    }
+
+    .btn {
+        height: 45px;
+        font-size: 15px;
+    }
+
+    nav .logo {
+        width: 120px; /* Logo size adjustment on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .loginform {
+        padding: 20px 30px;
+    }
+
+    .loginform h1 {
+        font-size: 24px;
+    }
+
+    .input-element input {
+        height: 40px;
+        padding: 0 10px;
+    }
+
+    .btn {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .remember-forgot {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .logo {
+        width: 100px; /* Smaller logo on mobile */
+    }
+}

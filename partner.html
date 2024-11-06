@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partner Dashboard</title>
+    <link rel="stylesheet" href="style5.css" /> <!-- Link to your existing CSS -->
+</head>
+<body>
+    <nav>
+        <div class="heading">
+            <div class="hh">
+                <img src="mainlogo.png" class="shramlogo" alt="Shram Bridge Logo" />
+                <ul class="head_contents">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="hh2">
+                <button class="signin" id="signinButton">Sign In</button>
+                <button class="register" id="registerButton">Register Now</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Welcome, [Freelancer Name]</h1>
+
+        <section class="profile-section">
+            <h2>Your Profile</h2>
+            <form id="profileForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+                
+                <label for="skills">Skills:</label>
+                <input type="text" id="skills" name="skills" placeholder="e.g., Web Development, Graphic Design" required />
+                
+                <label for="experience">Experience (Years):</label>
+                <input type="number" id="experience" name="experience" required />
+                
+                <label for="charges">Charges (per hour):</label>
+                <input type="number" id="charges" name="charges" required />
+                
+                <label for="achievements">Achievements:</label>
+                <textarea id="achievements" name="achievements" rows="4" placeholder="e.g., Certifications, Awards" required></textarea>
+                
+                <button type="submit">Update Profile</button>
+            </form>
+        </section>
+
+        <section class="projects-section">
+            <h2>Your Projects</h2>
+            <ul id="projectsList">
+                <li>Project 1: <a href="#">View Details</a></li>
+                <li>Project 2: <a href="#">View Details</a></li>
+                <li>Project 3: <a href="#">View Details</a></li>
+                <!-- More projects can be dynamically loaded here -->
+            </ul>
+        </section>
+
+        <section class="payments-section">
+            <h2>Your Payments</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2023-01-15</td>
+                        <td>₹5000</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>2023-02-10</td>
+                        <td>₹3000</td>
+                        <td>Pending</td>
+                    </tr>
+                    <!-- More payment records can be dynamically loaded here -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="script1.js"></script> <!-- Link to your existing JS -->
+</body>
+</html>

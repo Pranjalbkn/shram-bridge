@@ -1,0 +1,164 @@
+/* style.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.shramlogo{
+    width: 7rem;
+    /* filter: invert(100%); */
+}
+
+/* Navigation Styles */
+nav {
+    background: #007bff; /* Adjust this color to match your theme */
+    color: white;
+    padding: 15px 20px;
+}
+
+nav .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .hh{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+nav .head_contents {
+    list-style: none;
+    padding: 0;
+}
+
+nav .head_contents li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav .head_contents a {
+    color: white;
+    text-decoration: none;
+}
+
+nav .hh2 {
+    margin-left: auto;
+}
+
+button {
+    background-color: #28a745; /* Green for buttons */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Container Styles */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Section */
+.profile-section, .projects-section, .payments-section {
+    margin-bottom: 20px;
+}
+
+.profile-section h2, .projects-section h2, .payments-section h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    background-color: #007bff; /* Primary button color */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Projects Section */
+#projectsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#projectsList li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Payments Section */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
